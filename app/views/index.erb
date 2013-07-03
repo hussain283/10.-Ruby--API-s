@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Welcome to Screwing Around With Google Maps</h1>
+
+  <form method="post" action="/places/create">
+    <input type="text" placeholder="Name" name="place[name]"><br>
+    <input type="text" placeholder="Latitude" name="place[latitude]"><br>
+    <input type="text" placeholder="Longitude" name="place[longitude]"><br>
+    <input type="submit" value="Add Location"><br>
+  </form>
+  <br>
+  <% @places.each do |place| %>
+    <p><strong><a href="/places/show/<%= place.id %>"><%= place.name %></a><strong></p>
+  <% end %>
+</div>

@@ -1,0 +1,18 @@
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  border-bottom: 1px solid black;
+}
+
+th {
+  text-align: left;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
