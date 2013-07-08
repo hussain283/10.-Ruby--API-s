@@ -15,6 +15,8 @@ require 'pg'
 require 'active_record'
 require 'logger'
 
+require 'geocoder'
+
 require 'sinatra'
 require "sinatra/reloader" if development?
 

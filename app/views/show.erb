@@ -2,6 +2,8 @@
 <div id="map">
 </div>
 
-<div class="container" data-id="<%= @place.id %>" data-lat="<%= @place.latitude %>" data-lon="<%= @place.longitude %>">
+<div id="place" data-id="<%= @place.id %>" data-lat="<%= @place.latitude %>" data-lon="<%= @place.longitude %>">
   <h1><%= @place.name %></h1>
+  <a id="transit" href="#">Transit</a><br>
+  <a href="/">Home</a>
 </div>

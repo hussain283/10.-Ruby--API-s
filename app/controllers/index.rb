@@ -8,7 +8,7 @@ post '/places/create' do
   redirect "/"
 end
 
-get '/places/show/:id' do
+get '/places/:id/show' do
   @place = Place.find(params[:id])
   erb :show
 end

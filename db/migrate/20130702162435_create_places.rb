@@ -2,8 +2,9 @@ class CreatePlaces < ActiveRecord::Migration
   def change
     create_table :places do |t|
       t.string :name
-      t.decimal :latitude
-      t.decimal :longitude
+      t.string :address
+      t.float :latitude
+      t.float :longitude
       t.timestamps
     end
   end
